@@ -1,0 +1,434 @@
+<?xml version="1.0"?>
+<root>
+  <blocks>
+    <cms_block>
+      <title><![CDATA[Footer Links]]></title>
+      <identifier><![CDATA[footer_links]]></identifier>
+      <content><![CDATA[
+<ul>
+    <li><a href="{{store direct_url="about-magento-demo-store"}}">About Us</a></li>
+    <li><a href="{{store direct_url="customer-service"}}">Customer Service</a></li>
+<li class="last privacy"><a href="{{store direct_url="privacy-policy-cookie-restriction-mode"}}">Privacy Policy</a></li>
+</ul>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Footer Links Company]]></title>
+      <identifier><![CDATA[footer_links_company]]></identifier>
+      <content><![CDATA[
+<div class="links">
+    <div class="block-title">
+        <strong><span>Company</span></strong>
+    </div>
+    <ul>
+        <li><a href="{{store url=""}}about-magento-demo-store/">About Us</a></li>
+        <li><a href="{{store url=""}}contacts/">Contact Us</a></li>
+        <li><a href="{{store url=""}}customer-service/">Customer Service</a></li>
+        <li><a href="{{store url=""}}privacy-policy-cookie-restriction-mode/">Privacy Policy</a></li>
+    </ul>
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Cookie restriction notice]]></title>
+      <identifier><![CDATA[cookie_restriction_notice_block]]></identifier>
+      <content><![CDATA[<p>This website requires cookies to provide all of its features. For more information on what data is contained in the cookies, please see our <a href="{{store direct_url="privacy-policy-cookie-restriction-mode"}}">Privacy Policy page</a>. To accept cookies from this site, please click the Allow button below.</p>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Footer Bottom]]></title>
+      <identifier><![CDATA[footer_bottom]]></identifier>
+      <content><![CDATA[<div class="row">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	        <div class="box-info">
+			<div class="footer-item col-mobile-12">
+				<div class="box-content">
+					<div class="collapsible mobile-collapsible">
+						<h3 class="title">about midnight</h3>
+						<span class="toggle-tab mobile" style="display: none;"><span class="hidden">hidden</span></span>
+						<div class="content toggle-content">
+							<ul>
+								<li class="feature-icon first"><span class="sub-title">Add</span>
+									<p class="no-margin info">262 Milacina Mrest, Behansed, Paris</p>
+								</li>
+								<li class="feature-icon"><span class="sub-title">Tell<span class="hidden">hidden</span></span>
+									<p class="no-margin info">070-7782-9137</p>
+								</li>
+								<li class="feature-icon"><span class="sub-title">Mail<span class="hidden">hidden</span></span>
+									<p class="no-margin info">contact@midnight.com</p>
+								</li>
+								<li class="feature-icon">
+									<ul class="list-inline">
+										<li><a class="social-link" href="#"><i class="fa fa-twitter"><span class="hidden">twitter</span></i></a></li>
+										<li><a class="social-link" href="#"><i class="fa fa-pinterest"><span class="hidden">pinterest</span></i></a></li>
+										<li><a class="social-link" href="#"><i class="fa fa-facebook-square"><span class="hidden">facebook</span></i></a></li>
+										<li><a class="social-link" href="#"><i class="fa fa-behance"><span class="hidden">behance</span></i></a></li>
+										<li><a class="social-link" href="#"><i class="fa fa-dribbble"><span class="hidden">dribbble</span></i></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-item col-mobile-12">
+				<div class="box-content">
+					<div class="collapsible mobile-collapsible">
+						<h3 class="title">customer center</h3>
+						<span class="toggle-tab mobile" style="display: none;"><span class="hidden">hidden</span></span>
+						<div class="content toggle-content">
+						        <p class="phone-number">070-7782-9137</p>
+							<div class="time-on">
+								<p>working time</p>
+								<p>mon-fri am 09:00 - pm 18:00</p>
+								<p>lunch time pm 12:00 - 13:00</p>
+							</div>
+							<div class="time-off">
+								<p>sat, sun, holiday off.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-item col-mobile-12">
+				<div class="box-content">
+					<div class="collapsible mobile-collapsible">
+						<h3 class="title">Our service</h3>
+						<span class="toggle-tab mobile" style="display: none;"><span class="hidden">hidden</span></span>
+						<div class="content toggle-content">
+							<ul class="bullet">
+								<li><a href="#">Shipping policy</a></li>
+								<li><a href="#">My Account</a></li>
+								<li><a href="#">Return policy</a></li>
+								<li><a href="#">Contact us</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-item  col-mobile-12">
+				<div class="box-content">
+					<div class="collapsible mobile-collapsible">
+						<h3 class="title">Newsletter</h3>
+						<span class="toggle-tab mobile" style="display: none;"><span class="hidden">hidden</span></span>
+						<div class="content toggle-content">
+							<div class="newsletter">
+                                                                      {{block type="newsletter/subscribe" template="newsletter/subscribe.phtml"}}
+							</div>
+							<div class="footer-paypal">
+								<div class="paypal"><a href="#"><img class="img-responsive" alt="" src="{{media url="wysiwyg/alothemes/static/paypal.png"}}" /></a> <a href="#"><img class="img-responsive" alt="" src="{{media url="wysiwyg/alothemes/static/discover.png"}}" /></a> <a href="#"><img class="img-responsive" alt="" src="{{media url="wysiwyg/alothemes/static/visa.png"}}" /></a> <a href="#"><img class="img-responsive" alt="" src="{{media url="wysiwyg/alothemes/static/mastercard.png"}}" /></a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	        <div class="end-page">
+			<ul>
+				<li><a href="#">Privacy &amp; Cookies</a></li>
+				<li><a href="#">Terms Conditions</a></li>
+				<li><a href="#">Accessibiliti</a></li>
+				<li><a href="#">Store Directory</a></li>
+				<li><a href="#">About Us</a></li>
+			</ul>
+		</div>
+	</div>
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Brands]]></title>
+      <identifier><![CDATA[brands]]></identifier>
+      <content><![CDATA[<div class="container">
+	<div class="row">
+		<div class="col-lg-12">
+		           <div class="brands wow alo-fadeInUp">{{widget type="shopbrand/widget_brand" template="magiccart/shopbrand/brand.phtml"}}</div>
+		</div>
+	</div>
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Blogs]]></title>
+      <identifier><![CDATA[blogs]]></identifier>
+      <content><![CDATA[<div class="container">
+<div class="row">
+<div class="col-lg-12">{{widget type="blog/slide" title="Latest From Blog" categories="1" blocks_count="3" slide="1" auto="1" speed="800" row="1" portrait="1" landscape="1" tablet="1" desktop="2" visibleItems="3" marginColumn="30" widthImages="770" heightImages="450"}}</div>
+</div>
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Banner Menu Men]]></title>
+      <identifier><![CDATA[banner_menu]]></identifier>
+      <content><![CDATA[<img class="img-responsive" src="{{media url="wysiwyg/alothemes/static/banner-menu.jpg"}}" alt="" />]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Banner Menu Kid]]></title>
+      <identifier><![CDATA[banner_menu2]]></identifier>
+      <content><![CDATA[<img class="img-responsive" src="{{media url="wysiwyg/alothemes/static/banner-menu-kid.jpg"}}" alt="" />]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Banner Menu Women]]></title>
+      <identifier><![CDATA[banner_menu3]]></identifier>
+      <content><![CDATA[<img class="img-responsive" src="{{media url="wysiwyg/alothemes/static/banner-menu-d2.jpg"}}" alt="" />]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Testimonials]]></title>
+      <identifier><![CDATA[testimonial]]></identifier>
+      <content><![CDATA[<div class="testimonials">
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12">
+		         {{widget type="testimonial/widget_slide" template="magiccart/testimonial/slide.phtml"}}
+		</div>
+	</div>
+</div>
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Support]]></title>
+      <identifier><![CDATA[support]]></identifier>
+      <content><![CDATA[<div class="block_support">
+<div class="container">
+<div class="row">
+	<div class="support-inner clearfix">
+		<div class="extents-item col-lg-4 col-md-4 col-sm-4 col-xs-12">
+			<div class="extents-item-content">
+				<div class="wrap-extents-item clearfix">
+					<div class="icon-service">
+						<div class="support-icon square-round"><span class="icons"></span></div>
+					</div>
+					<div class="support-content">
+						<div class="support-info">
+							<div class="info-title">Free Shipping Worldwide</div>
+							<div class="sub-title">guaranteed delivery in 4 days</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="extents-item col-lg-4 col-md-4 col-sm-4 col-xs-12">
+			<div class="extents-item-content">
+				<div class="wrap-extents-item clearfix">
+					<div class="icon-service">
+						<div class="support-icon square-round"><span class="icons"></span></div>
+					</div>
+					<div class="support-content">
+						<div class="support-info">
+							<div class="info-title">24/7 customer sevice</div>
+							<div class="sub-title">call us 24/7 at 070-7782-9137</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="extents-item col-lg-4 col-md-4 col-sm-4 col-xs-12">
+			<div class="extents-item-content">
+				<div class="wrap-extents-item clearfix">
+					<div class="icon-service">
+						<div class="support-icon square-round"><span class="icons"></span></div>
+					</div>
+					<div class="support-content">
+						<div class="support-info">
+							<div class="info-title">Money back guaratee!</div>
+							<div class="sub-title">send within 30 days</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Link social]]></title>
+      <identifier><![CDATA[link-social]]></identifier>
+      <content><![CDATA[<ul class="list-inline">
+	<li><a class="social-link" href="#"><i class="fa fa-twitter"><span class="hidden">twitter</span></i></a></li>
+	<li><a class="social-link" href="#"><i class="fa fa-pinterest"><span class="hidden">pinterest</span></i></a></li>
+	<li><a class="social-link" href="#"><i class="fa fa-facebook-square"><span class="hidden">facebook</span></i></a></li>
+	<li><a class="social-link" href="#"><i class="fa fa-behance"><span class="hidden">behance</span></i></a></li>
+	<li><a class="social-link" href="#"><i class="fa fa-dribbble"><span class="hidden">dribbble</span></i></a></li>
+</ul>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Google Map]]></title>
+      <identifier><![CDATA[map_store]]></identifier>
+      <content><![CDATA[<div class="google-map"><iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.8277911385558!2d-0.13108129999999998!3d51.51637529999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b2d183f5ea3%3A0x8e1c5b00f1b16579!2zMTIgT3hmb3JkIFN0LCBTb2hvLCBMb25kb24gVzFELCBWxrDGoW5nIFF14buRYyBBbmg!5e0!3m2!1svi!2s!4v1434261501432" height="500" width="320"></iframe></div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Contac Info]]></title>
+      <identifier><![CDATA[contact_info]]></identifier>
+      <content><![CDATA[<div class="contact-info">
+	<h2 class="section-title">Contact Infomation</h2>
+	<div class="media-list">
+		<div class="media">
+			<div class="media-body"><strong>Address</strong>
+				<p>262 Milacina Mrest Street, Behansed, Paris, France</p>
+			</div>
+		</div>
+		<div class="media">
+			<div class="media-body"><strong>Tell</strong>
+				<p>(+86) 6 888 888</p>
+			</div>
+		</div>
+		<div class="media">
+			<div class="media-body"><strong>Mail</strong>
+				<p>contact@alotheme.com</p>
+			</div>
+		</div>
+		<div class="media">
+			<div class="media-body"><strong>Open</strong>
+				<p>Mon – Sat: 9:00 – 18:00</p>
+			</div>
+		</div>
+		<div class="feature-icon">
+			<ul class="list-inline">
+			<li><a class="social-link" href="#"><i class="fa fa-twitter"><span class="hidden">twitter</span></i></a></li>
+			<li><a class="social-link" href="#"><i class="fa fa-pinterest"><span class="hidden">pinterest</span></i></a></li>
+			<li><a class="social-link" href="#"><i class="fa fa-facebook-square"><span class="hidden">facebook</span></i></a></li>
+			<li><a class="social-link" href="#"><i class="fa fa-behance"><span class="hidden">behance</span></i></a></li>
+			<li><a class="social-link" href="#"><i class="fa fa-dribbble"><span class="hidden">dribbble</span></i></a></li>
+			</ul>
+		</div>
+	</div>
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Pages Menu]]></title>
+      <identifier><![CDATA[pages]]></identifier>
+      <content><![CDATA[<ul>
+<li><a href="{{store direct_url="about"}}"><span>About Us</span></a></li>
+<li><a href="{{store direct_url="no-route"}}"><span>404 Not Found </span></a></li>
+<li><a href="{{store direct_url="faq"}}"><span>FAQ</span></a></li>
+<li><a href="{{store direct_url="blog"}}"><span>Blog</span></a></li>
+</ul>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Slide Home 4,5]]></title>
+      <identifier><![CDATA[slide3]]></identifier>
+      <content><![CDATA[<div class="midnight-slide">{{widget type="magicslider/widget_slide" identifier="slide_home_45" template="magiccart/magicslider/magicslider.phtml"}}</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Top Banner Home 4]]></title>
+      <identifier><![CDATA[top_banner]]></identifier>
+      <content><![CDATA[<div class="top-banner">
+	<div class="content">
+		<div class="b-left">
+			<div class="b-box">
+				<img class="img-responsive" src="{{media url="wysiwyg/alothemes/static/top-banner4_03.jpg"}}" alt="" />
+				<div class="b-text">
+					<h3 class="b-caption1">boy's</h3>
+					<h3 class="b-caption2">fashion 2015</h3>
+				</div>
+			</div>
+		</div>
+		<div class="b-right">
+			<div class="b-box">
+				<img class="img-responsive" src="{{media url="wysiwyg/alothemes/static/top-banner4_07.jpg"}}" alt="" />
+				<div class="b-text">
+					<h3 class="b-caption1">girl's</h3>
+					<h3 class="b-caption2">street collection</h3>
+				</div>
+			</div>
+		</div>
+		<div class="b-center">
+			<div class="b-box">
+				<img class="img-responsive" src="{{media url="wysiwyg/alothemes/static/top-banner4_05.jpg"}}" alt="" />
+				<div class="b-text">
+					<h3 class="b-caption1">new arrivals</h3>
+					<h3 class="b-caption2">for kids</h3>
+					<h3 class="b-caption3">get 30% off your order</h3>
+				</div>
+			</div>
+		</div>		
+	</div>
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Deal Product 3]]></title>
+      <identifier><![CDATA[deal]]></identifier>
+      <content><![CDATA[<div class="deal-of  wow alo-fadeInUp">
+<div class="deal">
+<div class="deal-content">
+<div class="img-product">
+<div class="img"><img class="img-responsive" alt="" src="{{media url="wysiwyg/alothemes/static/deal_4_01.png"}}" /></div>
+<div class="sale-content price-left"><span class="price">$119</span> <span class="price-old">$169</span></div>
+</div>
+<div class="img-product">
+<div class="img"><img class="img-responsive" alt="" src="{{media url="wysiwyg/alothemes/static/deal_4_02.png"}}" /></div>
+<div class="sale-content price-left"><span class="price">$35</span> <span class="price-old">$80</span></div>
+</div>
+<div class="img-product">
+<div class="img"><img class="img-responsive" alt="" src="{{media url="wysiwyg/alothemes/static/deal_4_03.png"}}" /></div>
+<div class="sale-content price-right"><span class="price">$59</span> <span class="price-old">$99</span></div>
+</div>
+<div class="img-product">
+<div class="img"><img class="img-responsive" alt="" src="{{media url="wysiwyg/alothemes/static/deal_4_04.png"}}" /></div>
+<div class="sale-content price-right"><span class="price">$199</span> <span class="price-old">$299</span></div>
+</div>
+</div>
+<div class="deal-products">{{widget type="magicproduct/widget_magicproduct" identifier="deal_off" template="magiccart/magicproduct/magicproduct_custom.phtml"}}</div>
+</div>
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Featured products]]></title>
+      <identifier><![CDATA[c_featured_pro_kid]]></identifier>
+      <content><![CDATA[<div class="mid-category">{{widget type="magiccategory/widget_magiccategory" identifier="c_featured_product_kid" template="magiccart/magiccategory/magiccategory.phtml"}}</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Sub Pages Products]]></title>
+      <identifier><![CDATA[top_sale_product]]></identifier>
+      <content><![CDATA[{{widget type="magicproduct/widget_magicproduct" identifier="top_sale_product_4" template="magiccart/magicproduct/magicproduct.phtml"}}]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[product]]></title>
+      <identifier><![CDATA[kind_product]]></identifier>
+      <content><![CDATA[<div class="content-mega">
+	<div class="content-mega-custom content-mega-horizontal">
+	    <div class="container-full">
+			<ul class="mage-column cat-mega">
+				<li class="children level1">
+				   <a href="#"><span>Products</span></a>
+				   <ul class="level1">
+                                               <li class="level2"><a href="phasellus-vel-hendrerit.html"><span>Simple Product</span></a></li>
+						<li class="level2"><a href="grouped-product.html"><span>Grouped Product</span></a></li>
+						<li class="level2"><a href="configure-product.html"><span>Configurable Product</span></a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Support Online]]></title>
+      <identifier><![CDATA[support_online]]></identifier>
+      <content><![CDATA[<p class="welcome-msg">customer center  _ 070-7782-9137 am 9:00 - pm 18:00 sat, sun holiday off.</p>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+  </blocks>
+</root>

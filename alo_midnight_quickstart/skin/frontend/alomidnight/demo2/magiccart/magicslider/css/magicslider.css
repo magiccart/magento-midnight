@@ -1,0 +1,51 @@
+@import url(https://fonts.googleapis.com/css?family=Lora:700italic,700,400italic,400&subset=latin,latin-ext,cyrillic);
+
+.magicslider{padding:0px;margin:0;}
+.magicslider .item img{min-height: 200px}
+.bx-wrapper .bx-caption {display:none;}
+.bx-wrapper .bx-caption.start, .bx-wrapper .bx-caption.play {display: block !important; position: absolute; top: calc(40% - 140px); left: 0; text-align: center; width: 100%;}
+.bx-wrapper .bx-caption, .bx-wrapper .bx-caption.start{z-index: -1}
+ .bx-wrapper .bx-caption.play{z-index: 9}
+.bx-wrapper .bx-caption.start .text-slide, .bx-wrapper .bx-caption.play .text-slide {display: block !important; opacity: 1; visibility: visible;}
+@media(min-width:1920px){
+	/*.bx-wrapper .bx-caption.start, .bx-wrapper .bx-caption.play {left: 20%;}*/
+}
+
+/*Text Slide All*/
+.play h3{margin: 0}
+
+/*Text Slide 1*/
+.play .text-slide1{text-align: right;}
+.play .text-slide .caption1{font-size: 320px; font-weight: 400; line-height: 290px; margin: 0;text-transform: uppercase; margin-bottom: -232px; opacity: 0.1}
+.play .text-slide .caption2 span{line-height: 70px; font-weight: 500}
+/*.play .text-slide1 .caption2 .first{}*/
+.play .text-slide .caption2 .last{font-size: 85px; color: #373737; padding-right: 108px}
+.play .text-slide .caption2 strong{font-size: 27.33px; color: #b99867; border-bottom: 5px solid #b99867; padding: 0 19px; margin-right: 86px }
+.play .text-slide .caption2 strong, .play .text-slide .caption2 .last{display: inline-block; vertical-align: top;}
+.play .text-slide .caption2 .first{font-size: 75px; display: block; color: #b99867; padding-right: 165px}
+.play .text-slide .caption3{font-size: 14px; color: #373737; text-transform: uppercase; letter-spacing: 13px; padding-right: 116px; padding-top: 13px}
+
+/*Text Slide 2*/
+.play .text-slide2{text-align: right;}
+.play .text-slide3{text-align: center;}
+.play .text-slide2 .caption1{font-size: 400px; padding: 0;}
+
+.play .text-slide2 .caption2 strong, .play .text-slide3 .caption2 strong{display: none;}
+.play .text-slide2 .caption2 span{text-transform: capitalize; line-height: 80px}
+.play .text-slide2 .caption2 .first{font-size: 82px; padding-right: 195px}
+.play .text-slide2 .caption2 .last{font-size: 94px; padding-right: 60px}
+.play .text-slide2 .caption3{font-size: 21px; padding-top: 7px; letter-spacing: 14px; padding-right: 20px}
+/*Text Slide 3*/
+.play .text-slide3 .caption1{font-size: 271.98px; padding: 0; margin-left: -25px; margin-bottom: -224px; letter-spacing: 0}
+.play .text-slide3 .caption2 strong, .play .text-slide3 .caption2 strong{display: none;}
+.play .text-slide3 .caption2 span{text-transform: capitalize; line-height: 57px}
+.play .text-slide3 .caption2 .first{font-size: 61.88px; padding-right: 245px; line-height: 58px}
+.play .text-slide3 .caption2 .last{font-size: 70.72px; padding-left: 242px; line-height: 70px}
+.play .text-slide3 .caption3{font-size: 14.01px; padding-top: 11px; letter-spacing: 1px; padding-left: 73px; word-spacing: 7px}
+/*Text Slide 4*/
+
+/*Custom font*/
+.play .text-slide .caption2 strong,
+.play .text-slide .caption2 span,
+.play .text-slide .caption3
+{font-family: "Lora"}

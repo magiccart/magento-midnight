@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<root>
+  <magicslider>
+    <slide>
+      <title><![CDATA[Slide Home]]></title>
+      <identifier><![CDATA[slide_home]]></identifier>
+      <content><![CDATA[[{"url":"http:\/\/alo.com\/alo_midnight\/media\/magiccart\/magicslider\/\/s\/l\/slide1-1.jpg","file":"\/s\/l\/slide1-1.jpg","label":"","position":"1","disabled":0,"removed":0,"html":"<div class=\"container\">\n\t<div class=\"text-slide text-slide1\">\n\t\t<h3 class=\"caption1\">2015<\/h3>\n\t\t<h3 class=\"caption2\"><span class=\"first\">New models<\/span><strong>&<\/strong><span class=\"last\">trends<\/span><\/h3>\n\t\t<h2 class=\"caption3\">in summer collections<\/h2>\n\t<\/div>\n<\/div>","link":""},{"url":"http:\/\/alo.com\/alo_midnight\/media\/magiccart\/magicslider\/\/s\/l\/slide1-3.jpg","file":"\/s\/l\/slide1-3.jpg","label":"","position":"3","disabled":0,"removed":0,"html":"<div class=\"container\">\n\t<div class=\"text-slide text-slide3\">\n\t\t<h3 class=\"caption1\">best<\/h3>\n\t\t<h3 class=\"caption2\"><span class=\"first\">we design<\/span><strong><\/strong><span class=\"last\">your style<\/span><\/h3>\n\t\t<h2 class=\"caption3\">whatever your style, we have right toll for you...<\/h2>\n\t<\/div>\n<\/div>","link":""},{"url":"http:\/\/alo.com\/alo_midnight\/media\/magiccart\/magicslider\/\/s\/l\/slide1-2.jpg","file":"\/s\/l\/slide1-2.jpg","label":"","position":"2","disabled":0,"removed":0,"html":"<div class=\"container\">\n\t<div class=\"text-slide text-slide2\">\n\t\t<h3 class=\"caption1\">new<\/h3>\n\t\t<h3 class=\"caption2\"><span class=\"first\">men shoes<\/span><strong><\/strong><span class=\"last\">collection<\/span><\/h3>\n\t\t<h2 class=\"caption3\">street style new 2016<\/h2>\n\t<\/div>\n<\/div>","link":""}]]]></content>
+      <status><![CDATA[1]]></status>
+      <config><![CDATA[a:6:{s:5:"width";s:4:"1848";s:6:"height";s:3:"770";s:8:"controls";s:1:"0";s:5:"pager";s:1:"1";s:5:"pause";s:4:"6000";s:5:"speed";s:3:"800";}]]></config>
+    </slide>
+  </magicslider>
+</root>

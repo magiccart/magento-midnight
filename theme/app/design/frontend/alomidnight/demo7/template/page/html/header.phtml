@@ -1,0 +1,171 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2013 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+/**
+ * @var Mage_Page_Block_Html_Header $this
+ */
+?>
+<div class="header-container header-color color">
+    <div class="header">
+        <div class="header-content header-sticker custom-header">
+            
+            <div class="container">
+                <div class="row">
+                    <div class="header-logo  col-md-3 col-lg-3">
+                        <?php if ($this->getIsHomePage()): ?>
+                            <h1 class="logo">
+                                <strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo1"><img class="img-responsive" src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
+                            </h1>
+                        <?php else: ?>
+                            <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img class="img-responsive" src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
+                        <?php endif ?>
+                    </div>
+                    <div class="tool-header col-md-9 col-lg-9 col-sm-12 col-xs-12">
+                        <div class="tool-content">
+                            <div class="top-search">
+                                 <span class="search-icon fa fa-search toggle-tab mobile"></span>
+                                 <!-- <div class="overlay"></div> -->
+                                <div class="toggle-content" id="toggle">
+                                    <a href="#toggle"><span class="search-close"></span></a>
+                                    <?php echo $this->getChildHtml('topSearch') ?>
+                                </div>
+                            </div>
+
+                        <!-- tool -->
+                            <div class="top-setting">
+                                <span class="fa fa-gear toggle-tab mobile"></span>
+                                <div class="setting-box toggle-content">
+                                    <?php if($language = $this->getChildHtml('store_language')): ?>
+                                        <div class="top-form-language">
+                                            <?php echo $language ?>
+                                        </div>
+                                    <?php endif ?>
+                                    <?php if($currency = $this->getChildHtml('currency')): ?>
+                                        <div class="currency_top">
+                                            <?php echo $currency ?>
+                                        </div>
+                                    <?php endif ?>
+                                    <ul class="top-links">
+                                        <li class="customer">
+                                         <?php  if ($this->helper('customer')->isLoggedIn()): ?>
+                                                <a href="<?php echo Mage::getModel('core/url')->setStore(1)->getUrl('customer/account/logout'); ?>" title="<?php echo $this->__('Log Out') ?>"><?php echo $this->__('Log Out') ?>
+                                                </a>
+                                                <a href="<?php echo Mage::getModel('core/url')->setStore(1)->getUrl('customer/account/'); ?>" title="<?php echo $this->__('My account') ?>"><?php echo $this->__('My account') ?>
+                                                </a>
+                                            <?php else: ?>
+                                              <a href="<?php echo Mage::getModel('core/url')->setStore(1)->getUrl('customer/account/login'); ?>" title="<?php echo $this->__('Login') ?>"><?php echo $this->__('Login') ?>
+                                              </a>
+                                                <a id="quick_sigup_link" style="positon:relative;" href="<?php echo Mage::getModel('core/url')->setStore(1)->getUrl('customer/account/create')?>" title="<?php echo $this->__('Register') ?>"><?php echo $this->__('Register') ?>
+                                                </a>
+                                        <?php endif; ?>
+                                        </li>
+                                        <li class="top-wishlist">
+                                            <a title="My wishlist" href="<?php echo $this->getUrl('wishlist') ?>" target="_blank" class="btn-heart"><?php echo $this->__('My wishlist'); ?></a>
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+                        <!-- end tool -->
+                            <div class="miniCartWrap">
+                                <?php echo $this->getChildHtml('ajaxcart'); ?>
+                            </div>
+                        </div>
+                        <div class="custom-menu menu-mobile">
+                            <a class="toggle-tab mobile"><span></span><span></span><span></span></a>
+                            <div class="main-menu toggle-content">
+                                <h1 class="logo">
+                                    <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo1"><img class="img-responsive" src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
+                                </h1>
+                                <?php echo $this->getChildHtml('topMenu') ?>
+                                <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('link-social')->toHtml(); ?>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--end header content-->
+        <div class="elevator slide-control">
+            <a href="#elevator-1" class="prev"><span class="fa fa-long-arrow-up"></span></a>
+            <div class="info">
+                <span class="current-slide">01</span>
+                <span class="separator no-margin">/</span>
+                <span class="total-slide"></span>
+            </div>
+            <a href="#elevator-2" class="next"><span class="fa fa-long-arrow-down"></span></a>
+        </div>
+    </div>
+</div>
+<?php //echo $this->getLayout()->createBlock('cms/block')->setBlockId('block_map_contacts')->toHtml() ?>
+
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $('.top-search .search-close, .top-search .overlay').click(function(event) {
+            event.preventDefault();
+            $(this).closest('.top-search').removeClass('toggle-visible').find('.toggle-content').removeClass('visible');
+        });
+
+        var slideElevator = $('[id^="elevator"]');
+        var elevatorControl = $('.elevator.slide-control');
+        var numSlide = slideElevator.length;
+        elevatorControl.find('.total-slide').html(numSlide);
+        slideElevator.hover(function() {
+            var idx = $(this).index();
+            elevatorControl.find('.current-slide').html(idx +1);
+            elevatorControl.find('.prev').attr('href', "#elevator-" + idx);
+            elevatorControl.find('.next').attr('href', "#elevator-" + (idx +2));
+            elevatorControl.find('.prev, .next').click(function(e) {
+                e.preventDefault();
+                var target = this.hash;
+
+                if($(this).hasClass('next')){
+                    if(idx >= numSlide) return;
+                    idx++;
+                    elevatorControl.find('.current-slide').html(idx);
+                    elevatorControl.find('.prev').attr('href', "#elevator-" + (idx-1));
+                    elevatorControl.find('.next').attr('href', "#elevator-" + idx);
+                } else {
+                    if(idx <= 1) return;
+                    idx--;
+                    elevatorControl.find('.current-slide').html(idx);
+                    elevatorControl.find('.prev').attr('href', "#elevator-" + idx);
+                    elevatorControl.find('.next').attr('href', "#elevator-" + (idx+1));
+                }
+
+
+                if($(document).find(target).length <=0){
+                    return false;
+                }
+                var $target = $(target);
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top-50
+                }, 500);
+                return false;
+            });
+        });
+
+    });
+</script>

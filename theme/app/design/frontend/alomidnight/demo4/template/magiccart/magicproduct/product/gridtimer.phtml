@@ -1,0 +1,98 @@
+<?php
+/**
+ * Magiccart 
+ * @category    Magiccart 
+ * @copyright   Copyright (c) 2014 Magiccart (http://www.magiccart.net/) 
+ * @license     http://www.magiccart.net/license-agreement.html
+ * @Author: DOng NGuyen<nguyen@dvn.com>
+ * @@Create Date: 2014-08-08 22:57:12
+ * @@Modify Date: 2015-04-20 18:04:28
+ * @@Function:
+ */
+ ?>
+<?php
+    $_productCollection=$this->getLoadedProductCollection();
+    $_helper = $this->helper('catalog/output');
+    $helpLabels = $this->helper('alothemes/labels');
+    $helpTimer  = $this->helper('alothemes/timer'); $num = 1;
+?>
+
+<div class="mage-magictabs mc-<?php echo $this->getType();?>">
+    <?php if(!$_productCollection->count()): ?>
+    <p class="note-msg"><?php echo $this->__('There are no products matching the selection.') ?></p>
+    <?php else: ?>
+    <?php 
+        $config = $this->getWidgetCfg(); 
+        $width  = $config['widthImages'];
+        $height = $config['heightImages'];
+        $actions = isset($config['action']) ? $config['action'] : array();
+    ?>
+    <?php $_collectionSize = $_productCollection->count() ?>
+    <?php $_rowCount = isset($config['row']) ? $config['row'] : 1; //$this->getColumnCount(); ?>
+    <?php $j=0; $time = isset($config['productDelay']) ? $config['productDelay'] : 0; ?>
+    <?php $tag = ($_rowCount >1) ? 'div' : 'ul'; ?>
+    <<?php echo $tag ?> class="flexisel-content products-grid <?php echo $this->getType();?> zoomOut play">
+    <?php $i=0; foreach ($_productCollection as $_product): ?>
+        <?php if ($_rowCount > 1 && $i++%$_rowCount==0): ?>
+            <ul class="products-grid-rows">
+        <?php endif ?>
+            <?php $t = $j*$time; $t .='ms'; $j++; ?>
+
+                <li style="<?php echo "-webkit-animation-delay:$t;-moz-animation-delay:$t;-o-animation-delay:$t;animation-delay:$t" ?>;" class="item item-animate">
+                    <div class="per-product">
+                        <div class="images-container">
+						    <div class="product-hover">
+                                <?php echo $helpTimer->getTimer($_product, $num); $num++;//Product Timer ?>
+	
+							</div>
+                                <?php if($actions): ?>
+								<div class="actions-no hover-box">
+									<div class="actions">
+										<?php if(in_array("cart", $actions)):?>
+											<?php if($_product->isSaleable()): ?>
+												<button type="button" title="<?php echo $this->__('Shop now') ?>" class="button btn-cart" onclick="setLocation('<?php echo $this->getAddToCartUrl($_product) ?>')"><span class="shop-now"><?php echo $this->__('Shop now') ?></span></button>
+											<?php else: ?>
+												<p class="availability out-of-stock"><span><?php echo $this->__('Out of stock') ?></span></p>
+											<?php endif; ?>
+										<?php endif; ?>
+
+										
+											<?php if(in_array("wishlist", $actions)):?>
+												<ul class="add-to-links">
+                                                <?php if ($this->helper('wishlist')->isAllow()) : ?>
+													<li class="pull-left-none"><a href="<?php echo $this->helper('wishlist')->getAddUrl($_product) ?>" title="<?php echo $this->__('Add to Wishlist') ?>" class="link-wishlist"><i class="icon-heart icons"></i><?php echo $this->__('Add to Wishlist') ?></a>
+                                                    </li>
+												<?php endif; ?>
+                                                </ul>
+											<?php endif; ?>
+
+                                            <?php if(in_array("compare", $actions)):?>
+                                                <ul class="add-to-links">
+                                                <?php if($_compareUrl=$this->getAddToCompareUrl($_product)): ?>
+                                                    <li class="pull-left"><span class="separator">|</span> <a href="<?php echo $_compareUrl ?>" title="<?php echo $this->__('Add to Compare') ?>" class="link-compare"><i class="fa fa-files-o"></i><?php echo $this->__('Add to Compare') ?></a></li>
+                                                <?php endif; ?>
+                                                </ul>
+                                            <?php endif; ?>
+										
+									</div>
+								</div>
+                             <?php endif ?>
+                        </div>
+					</div>
+                                
+                        <?php if(in_array("review", $actions)):?>
+                            <div class="display_inline">
+                           <?php echo $this->getReviewsSummaryHtml($_product, 'short') ?>
+                        </div>
+                        <?php endif ?>
+                                
+                </li>
+            <?php if ($_rowCount > 1 && $i%$_rowCount==0 || $i==$_collectionSize): ?>
+                </ul>
+            <?php endif ?>
+        <?php endforeach ?>
+    </<?php echo $tag; ?>>
+<?php endif; ?>
+</div>
+
+

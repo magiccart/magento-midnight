@@ -1,0 +1,73 @@
+01/29/2016
+file Change:
+app/design/frontend/alomidnight/default/template/magiccart/magiccategory/product/grid.phtml
+app/design/frontend/alomidnight/default/template/page/html/pager.phtml
+
+02/15/2016
+file Change:
+php file:
+app\code\local\Magiccart\Magiccategory\Block\Product\Grid.php
+
+html file: 
+app\design\frontend\alomidnight\default\template\magiccart\magiccategory\product\grid.phtml
+app\design\frontend\alomidnight\default\template\magiccart\magicproduct\product\grid.phtml
+app\design\frontend\alomidnight\default\template\magiccart\shopbrand\product\grid.phtml
+app\design\frontend\alomidnight\default\template\magiccart\shopbrand\product\gridtimer.phtml
+app\design\frontend\alomidnight\default\template\magiccart\alothemes\catalog\product\list\related.phtml
+app\design\frontend\alomidnight\default\template\magiccart\alothemes\catalog\product\list\upsell.phtml
+
+file XML:
+app\design\frontend\alomidnight\default\layout\customer.xml
+
+02/29/2016
+file changed:
+html file:
+app\design\frontend\alomidnight\default\template\catalog\product\list.phtml
+app\design\frontend\alomidnight\default\template\catalog\product\list2.phtml
+app\design\frontend\alomidnight\default\template\catalog\product\list3.phtml
+app\design\frontend\alomidnight\default\template\catalog\product\list4.phtml
+app\design\frontend\alomidnight\default\template\catalog\product\list5.phtml
+app\design\frontend\alomidnight\default\template\catalog\product\list6.phtml
+
+css file:
+skin/frontend/alomidnight/default/magiccart/magicmenu/css/magicmenu.css
+skin/frontend/alomidnight/demo2/magiccart/magicmenu/css/magicmenu.css
+skin/frontend/alomidnight/demo3/magiccart/magicmenu/css/magicmenu.css
+skin/frontend/alomidnight/demo4/magiccart/magicmenu/css/magicmenu.css
+skin/frontend/alomidnight/demo5/magiccart/magicmenu/css/magicmenu.css
+skin/frontend/alomidnight/demo6/magiccart/magicmenu/css/magicmenu.css
+skin/frontend/alomidnight/demo7/magiccart/magicmenu/css/magicmenu.css
+
+05/26/2016
+add code below to file:
+.tool-header {width: auto;}
+file style changed:
+skin/frontend/alomidnight/demo2/css/styles.css
+skin/frontend/alomidnight/demo3/css/styles.css
+skin/frontend/alomidnight/demo4/css/styles.css
+
+File php changed:
+app\code\local\Magiccart\Magicshop\controllers\QuickviewController.php
+
+
+
+02/06/2017: supee-8788
+	update patch here: http://alothemes.com//themeforest/security/supee-8788/app.zip
+
+04/21/2017:
+	File changed:
+	app/code/local/Magiccart/Shopbrand/Block/Adminhtml/Brand/Grid.php
+	app/design/frontend/alomidnight/default/template/page/html/header.phtml
+	app/design/frontend/alomidnight/demo2/template/page/html/header.phtml
+	app/design/frontend/alomidnight/demo3/template/page/html/header.phtml
+	app/design/frontend/alomidnight/demo4/template/page/html/header.phtml
+	app/design/frontend/alomidnight/demo5/template/page/html/header.phtml
+	app/design/frontend/alomidnight/demo6/template/page/html/header.phtml
+	app/design/frontend/alomidnight/demo7/template/page/html/header.phtml
+	
+09/21/2017:
+	Files remove:
+	app\design\frontend\alomidnight\default\template\checkout\multishipping\shipping.phtml
+	app\design\frontend\alomidnight\default\template\checkout\onepage\payment.phtml
+	app\design\frontend\alomidnight\default\template\checkout\onepage\shipping.phtml
+	app\design\frontend\alomidnight\default\template\checkout\onepage\shipping_method.phtml
